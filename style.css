@@ -1,0 +1,87 @@
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background-color: #E8E8E8;
+  font-family: helvetica, sans-serif;
+  font-size: 12pt;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+img {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  
+  a {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .section {
+    position: relative;
+    width: 100vw;
+  }
+  
+ .section--top {
+    height: 100vh;
+} 
+
+.section--about {
+    padding: 20px;
+    padding-top: 60px;
+  }
+  
+  @media(min-width: 500px) {
+    .section--about {
+      padding: 60px;
+    }
+  }
+
+.about__text {
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: justify;
+  }
+
+.border {
+    border-top: 1px solid #000000;
+}
+
+.img--logo {
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    left: 0; 
+    top:15%;
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+.img--Logo {
+    bottom: 0;
+    -webkit-mask: linear-gradient(transparent, #000000);
+    mask: linear-gradient(transparent, #000000);
+}
+
+
+#drawingCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  #barra {
+    z-index: 999;
+  }
