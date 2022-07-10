@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcana</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
+  </head>
 
-<body>
+  <body>
     <nav id="barra" class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Cartas</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="mayores.html">Arcanos Mayores </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="bastos.html">Bastos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="espadas.html">Espadas</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="copas.html">Copas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="oros.html">Oros</a>
-              </li>
-            <li class="nav-item">
-              </li>
-          </ul>
-        </div>
-      </nav>
+      <a class="navbar-brand" href="index.html">Cartas</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="mayores.html">Arcanos Mayores </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bastos.html">Bastos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="espadas.html">Espadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="copas.html">Copas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="oros.html">Oros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Sketch/cardSelection.html">Comenzar</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-     <section class="section--top">
-        <img class="img--logo img--Logo" src="Images/Logo.png" alt="Arcana" />
-        <canvas id="drawingCanvas"></canvas>
-    </section> 
+    <section class="section--top">
+      <img class="img--logo img--Logo" src="mayores/Logo.png" alt="Arcana" />
+      <canvas id="drawingCanvas"></canvas>
+    </section>
 
     <section class="section--about">
-        <p class="about__text">
-            El proyecto Arcana está basado en la lectura de las cartas del Tarot. Esta técnica consiste
-            en que se barajen ocho cartas y las mismas sean interpretadas por un lector, según el orden
-            o disposición en que han sido seleccionadas o repartidas. El mazo de Tarot es una baraja
-            especial que consta de 78 cartas, divididas en arcanos mayores (22 cartas) y menores 
-            (56 cartas conformadas por los palos bastos, copas, oros y espadas).
-            Para este proyecto solo se tomarán tres cartas, las cuales representarán pasado, presente y futuro.
-            Luego se procederá a mezclar dichos símbolos para dar como resultado una nueva imagen abstracta,
-            siendo esta la "reinterpretación" de los tres componentes anteriores.
+      <p class="about__text">
+        El proyecto Arcana está basado en la lectura de las cartas del Tarot.
+        Esta técnica consiste
+        en que se barajen ocho cartas y las mismas sean interpretadas por un
+        lector, según el orden
+        o disposición en que han sido seleccionadas o repartidas. El mazo de
+        Tarot es una baraja
+        especial que consta de 78 cartas, divididas en arcanos mayores (22
+        cartas) y menores
+        (56 cartas conformadas por los palos bastos, copas, oros y espadas).
+        Para este proyecto solo se tomarán tres cartas, las cuales representarán
+        pasado, presente y futuro.
+        Luego se procederá a mezclar dichos símbolos para dar como resultado una
+        nueva imagen abstracta,
+        siendo esta la "reinterpretación" de los tres componentes anteriores.
+      </p>
+      <div class="border"></div>
+      <br>
 
-        </p>
-        <div class="border"></div>
-        <br>
-      
 
     </section>
 
     <script src="script.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 
-</body>
+  </body>
 
 </html>
