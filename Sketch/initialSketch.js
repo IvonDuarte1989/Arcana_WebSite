@@ -75,7 +75,7 @@ function draw() {
             rect(card1XPosition + card1Width, cardYPosition, 155, 155, 20);
             textSize(11);
             fill(50);
-            text(getCardDescription("El_Carro"), card1XPosition + card1Width + 5, cardYPosition - 60, card1Width, card1Height);
+            text(getCardDescription(card1Name), card1XPosition + card1Width + 5, cardYPosition - 60, card1Width, card1Height);
         } else if (mouseOverCard2) {
             squareColor = color(100, 50, 100);
             squareColor.setAlpha(120);
@@ -83,7 +83,7 @@ function draw() {
             rect(card2XPosition + card2Width, cardYPosition, 155, 155, 20);
             textSize(11);
             fill(50);
-            text('Fuerza, estabilidad, poder, autoridad, legalidad. Integridad moral, voluntad inquebrantable. Protevtor poderoso y generoso. Solución de problemas materiales. Padre, energía sexual, potencia fecundadora.', card2XPosition + card2Width + 5, cardYPosition - 60, card2Width, card2Height);
+            text(getCardDescription(card2Name), card2XPosition + card2Width + 5, cardYPosition - 60, card2Width, card2Height);
         } else if (mouseOverCard3) {
             squareColor = color(100, 50, 100);
             squareColor.setAlpha(120);
@@ -91,7 +91,7 @@ function draw() {
             rect(card3XPosition + card3Width, cardYPosition, 155, 155, 20);
             textSize(11);
             fill(50);
-            text('Fuerza, estabilidad, poder, autoridad, legalidad. Integridad moral, voluntad inquebrantable. Protevtor poderoso y generoso. Solución de problemas materiales. Padre, energía sexual, potencia fecundadora.', card3XPosition + card3Width + 5, cardYPosition - 60, card3Width, card3Height);
+            text(getCardDescription(card3Name), card3XPosition + card3Width + 5, cardYPosition - 60, card3Width, card3Height);
         }
     }
     return;
@@ -151,5 +151,5 @@ function mouseMoved() {
 }
 
 function getCardDescription(cardName) {
-    return cardDescriptions.find(cd => cd.name == cardName).description;
+    return cardDescriptions.find(cd => cd.name == cardName.substring(cardName.indexOf('/') + 1, cardName.indexOf('.'))).description;
 }
